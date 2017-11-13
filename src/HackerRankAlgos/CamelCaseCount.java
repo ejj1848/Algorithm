@@ -1,4 +1,4 @@
-package com.company.HackerRankAlgos;
+package HackerRankAlgos;
 
 import java.util.Scanner;
 

@@ -1,6 +1,5 @@
-package com.company.HackerRankAlgos;
+package HackerRankAlgos;
 
-import java.io.*;
 import java.util.*;
 
 public class Staairs {

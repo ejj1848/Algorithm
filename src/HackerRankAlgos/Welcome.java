@@ -1,4 +1,4 @@
-package com.company.HackerRankAlgos;
+package HackerRankAlgos;
 
 /**
  * Created by ericjohn1 on 12/20/2016.
