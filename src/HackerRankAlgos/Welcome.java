@@ -9,52 +9,46 @@ import java.util.Map;
  */
 public class Welcome {
 
+//    static float horsesOnPath = 1;
+//    static float totalDistance = 2525;
+//    static float pathPosition = 2400;
+//    static float maxSpeedOfHorse = 5;
 
-    // create a function
-    // allow function to eval 2 strings
-    // check sr1 against s2  length wise
-    // Checl charactes
-    // Check count
-    //return boolean
-
-    static String string1 = "beer";
-    static String string2 = "bear";
+    static float horsesOnPath = 2;
+    static float totalDistance = 100;
+    static float pathPosition = 80;
+    static float maxSpeedOfHorse = 100;
+    static float pathPosition2 = 70;
+    static float maxSpeedOfHorse2 = 10;
 
     public static void main(String[] args) {
 
-        System.out.println(checker(string1, string2));
-
-    }
-
-    private static Boolean checker(String string1, String string2) {
-        boolean checkeValue = true;
-        if (checkStringLength(string1, string2)) {
-            checkeValue = letterCount(string1).equals(letterCount(string2));
-        } else {
-            checkeValue = false;
-
+        if(horsesOnPath ==1) {
+            System.out.println(calculateTopSpeedOneHorse(totalDistance, pathPosition, maxSpeedOfHorse));
         }
-
-        return checkeValue;
-    }
-
-    private static Boolean checkStringLength(String string1, String string2) {
-        return (string1.length() == string2.length());
-
-    }
-
-    private static Map<Character, Integer> letterCount(String word) {
-        Map<Character, Integer> letterCount = new HashMap<>();
-
-        for (Character c : word.toCharArray()) {
-            if (!letterCount.containsKey(c))
-                letterCount.put(c, 1);
-            else {
-                letterCount.replace(c, letterCount.get(c) + 1);
-            }
+        else {
+            System.out.println(calculateTopSpeedTwoHorse(totalDistance,pathPosition,maxSpeedOfHorse, pathPosition2, maxSpeedOfHorse2));
         }
-        return letterCount;
     }
+
+    private static float calculateTopSpeedTwoHorse(float totalDistance, float pathPosition, float maxSpeedOfHorse, float pathPosition2 , float maxSpeedOfHorse2) {
+
+        return  totalDistance/(Math.max(getHoursLeft(totalDistance, pathPosition, maxSpeedOfHorse), getHoursLeft(totalDistance, pathPosition2, maxSpeedOfHorse2)));
+
+    }
+
+    private static float calculateTopSpeedOneHorse(float totalDistance, float pathPosition, float maxSpeedOfHorse) {
+
+        return totalDistance/getHoursLeft(totalDistance, pathPosition, maxSpeedOfHorse);
+
+
+    }
+
+    private static float getHoursLeft(float totalDistance, float pathPosition, float maxSpeedOfHorse) {
+        float horseRemainder = totalDistance - pathPosition;
+        return  horseRemainder/maxSpeedOfHorse;
+    }
+
 }
 
 
