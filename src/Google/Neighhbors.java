@@ -1,7 +1,6 @@
 package Google;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 
 public class Neighhbors {
@@ -33,6 +32,7 @@ public class Neighhbors {
         colors[4] = new Color(b, 'B');
         colors[5] = new Color(v, 'V');
         Arrays.sort(colors, (a, b1) -> b1.count - a.count);
+        
 
     }
 
