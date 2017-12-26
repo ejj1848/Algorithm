@@ -1,4 +1,4 @@
-package Prep.Poly.Rando;
+package Rando;
 
 
 
@@ -90,10 +90,6 @@ public class GOL {
         // The game of life rules in code form.?
         if(liveCount == 2 && cellCurrentlyAlive){
             return true;
-        } else if(liveCount == 3){
-            return true;
-        } else {
-            return false;
-        }
+        } else return liveCount == 3;
     }
 }

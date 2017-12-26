@@ -1,4 +1,4 @@
-package Prep.Poly.Rando;
+package Rando;
 
 import java.util.Scanner;
 

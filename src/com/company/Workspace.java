@@ -1,25 +1,28 @@
 package com.company;
 
 
-public  class Workspace {
-
-
-    private static int[] nums = {1, 1, 2, 2, 2, 2, 2, 2};
+public class Workspace {
 
     public static void main(String[] args) {
-        if (nums.length == 0) {
-            System.out.println("0");
-        }
-        int i = 0;
-        for (int j = 1; j < nums.length; j++) {
-            if (nums[j] != nums[i]) {
-                i++;
-                nums[i] = nums[j];
-            }
-        }
-        System.out.println(i + 1);
+
+        int[] nums = {1,99,100,99,1,1,99,1,200};
+        System.out.println(robber(nums));
 
 
     }
 
+    private static int robber(int[] nums){
+
+        int robOne = 0;
+        int robTwo = 0;
+        int hold = 0;
+        for(int n: nums){
+           hold = robOne;
+           robOne = Math.max(robOne,robTwo);
+           robTwo = n +hold;
+
+        }
+
+        return Math.max(robOne,robTwo);
+    }
 }
