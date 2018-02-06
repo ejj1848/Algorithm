@@ -37,8 +37,8 @@ public class FairSquare {
     }
 
     private static boolean isPalindrome(int n) {
-        String checker = String.valueOf(n);
-        char[] compare = checker.toCharArray();
-        return (compare[0] == compare[compare.length - 1]);
+        StringBuilder checker = new StringBuilder(String.valueOf(n));
+
+        return (checker.toString().equals(checker.reverse().toString()));
     }
 }
