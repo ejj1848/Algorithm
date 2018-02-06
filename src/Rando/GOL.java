@@ -10,6 +10,7 @@ public class GOL {
     public static void main(String[] args) {
       GOL gol = new GOL(10);
         gol.drawWorld();
+        
 
     }
     GOL(int dimension){

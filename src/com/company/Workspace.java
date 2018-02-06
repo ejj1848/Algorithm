@@ -1,11 +1,21 @@
 package com.company;
 
 
+import com.thoughtworks.xstream.converters.basic.StringBufferConverter;
+
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.stream.IntStream;
 
-public class Workspace {
+public class Workspace implements Serializable {
+    public static void main(String[] args) {
+
+String s = new String("Eric");
+
+StringBuffer sb = new StringBuffer("Eric");
+        System.out.println();
+    }
 
 
 
