@@ -1,5 +1,6 @@
 package CrackingCode;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,6 +12,8 @@ public class Permutation {
     final static String isPerm = "tba";
 
     public static void main(String[] args) {
+
+        System.out.println(checkPerm(orig, isPerm));
 
         if (countLetters(orig).equals(countLetters(isPerm)))
             System.out.println("TRUE");
@@ -31,5 +34,22 @@ public class Permutation {
 
         return letterCount;
     }
+
+    private static char[] sortString(String a) {
+        char[] orig = a.toCharArray();
+        Arrays.sort(orig);
+        return orig;
+    }
+
+    private static boolean checkPerm(String a, String b) {
+        boolean result = false;
+
+        if (Arrays.equals(sortString(a), sortString(b))) {
+            result = true;
+        }
+
+        return result;
+    }
+
 
 }
