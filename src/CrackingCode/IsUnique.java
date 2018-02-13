@@ -8,14 +8,14 @@ public class IsUnique {
 
         boolean isUniqueString = true;
 
-        breakloop:
+        breakLoop:
         for(int i = 0; i <= input.length(); i++){
             for (int j = i + 1 ; j < input.length() ; j++) {
                 System.out.println("COMPARING: " + input.charAt(i) + " == " + input.charAt(j));
 
                 if(input.charAt(i) == input.charAt(j)){
                     isUniqueString = false;
-                    break breakloop;
+                    break breakLoop;
                 }
             }
         }
