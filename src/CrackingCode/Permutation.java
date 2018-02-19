@@ -47,9 +47,6 @@ public class Permutation {
         if (Arrays.equals(sortString(a), sortString(b))) {
             result = true;
         }
-
         return result;
     }
-
-
 }
