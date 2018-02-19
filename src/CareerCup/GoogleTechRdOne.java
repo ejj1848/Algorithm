@@ -7,10 +7,10 @@ package CareerCup;
  * the result string, but make sure to retain the order of such characters
  * Case sensitivity is irrelevant
  * e.g. S1 = Google, S2 = dog;
- * Output = dooggle;
+ * Output = ooggle;
  *
  * e.g. S1 =abcdedadf; S2 =cae;
- * Output = ccaaebdddf;
+ * Output = caaebdddf;
  *
  */
 
