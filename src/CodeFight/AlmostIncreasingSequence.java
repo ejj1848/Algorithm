@@ -3,7 +3,7 @@ package CodeFight;
 public class AlmostIncreasingSequence {
 
     public static void main(String[] args) {
-        int[] sequence = {1, 3, 2};
+        int[] sequence ={1,2,3};
         System.out.println(aIS(sequence));
     }
 
