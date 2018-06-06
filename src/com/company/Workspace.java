@@ -1,18 +1,24 @@
 package com.company;
 
 
-import com.thoughtworks.xstream.converters.basic.StringBufferConverter;
+public class Workspace {
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.stream.IntStream;
 
-public class Workspace implements Serializable {
     public static void main(String[] args) {
 
-    }
-}
+        Integer num = 100;
+        Boolean seesaw = true;
 
+        for (int i = 0; i < (num / 2); ) {
+            if (seesaw) {
+                System.out.println(i + 1);
+                seesaw = false;
+            } else {
+                System.out.println((num - i));
+                seesaw = true;
+                i++;
+            }
+        }
+    }
+
+}
