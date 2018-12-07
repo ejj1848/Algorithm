@@ -11,28 +11,11 @@ public class interview {
     final static int END = 21312999;
     final static int INCREMENT = 1;
 
-    public static void test() {
-        outerloop:
-        for (int i = 0; i < 5; i++) {
-            middleloop:
-            for (int k = 0; k < 5; k++) {
-                for (int j = 0; j < 5; j++) {
-                    if (i * j > 6) {
-                        System.out.println("Breaking");
-                        break middleloop;
-                    }
-                    System.out.println(i + " " + j);
-                }
-            }
-            System.out.println("outer - " + i);
-        }
-        System.out.println("Done");
-    }
 
     public static void main(String[] args) {
-//fizzBuzz();
-
-     System.out.println(generateDeck().toString());
+//
+//            fizzBuzz();
+        System.out.println(generateDeck().toString());
 //        System.out.println(generatePokerHand(2).toString());
 
     }
@@ -40,25 +23,14 @@ public class interview {
     private static void fizzBuzz() {
         // todo:
 
-        for(int i = 1;i<= 100;i++){
-            if(i % 3 == 0 && i % 5 == 0){
-                System.out.println("FIZZBUZZ");
-            }
-            else if(i % 3 == 0){
-                System.out.println("FIZZ");
-            }
-            else if(i % 5 == 0){
-                System.out.println("BUZZ");
-            }
-            else{
-                System.out.println(i);
-            }
-        }
+
         //   ITERATE FROM 1 TO 100
         //    IF DIV BY 3 PRINT FIZZ
         //    IF DIV BY 5 PRINT BUZZ
         //    IF DIV BY 3 & 5 PRINT FIZZBUZZ
-        //    ELSE PRINT THE NUMBER
+        //    ELSE PRINT THE NUmber
+
+
 
     }
 
@@ -70,14 +42,13 @@ public class interview {
         String[] suits = "Hearts,Diamonds,Clubs,Spades".split(",");
         String[] vals = "Ace,2,3,4,5,6,7,8,9,10,Jack,Queen,King".split(",");
 
-        List<String> deck = new ArrayList<String>();
+        List<String> deck = new ArrayList<>();
 
         //todo: LOGIC TO CREATE THE LIST OF CARD VALUES
-    for(String s: suits){
-        for(String v: vals)
 
-        deck.add(s + "-" + v);
-    }
+
+
+
 
         return deck;
     }

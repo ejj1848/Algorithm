@@ -6,19 +6,15 @@ public class Workspace {
 
     public static void main(String[] args) {
 
-        Integer num = 100;
-        Boolean seesaw = true;
+        System.out.println( regexEmail("eric.johnson"));
 
-        for (int i = 0; i < (num / 2); ) {
-            if (seesaw) {
-                System.out.println(i + 1);
-                seesaw = false;
-            } else {
-                System.out.println((num - i));
-                seesaw = true;
-                i++;
-            }
-        }
     }
 
+    private static String regexEmail(String email) {
+
+        String firstName = email.substring(0, email.indexOf('.') );
+
+
+        return firstName;
+    }
 }

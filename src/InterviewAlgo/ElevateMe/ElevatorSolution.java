@@ -10,7 +10,7 @@ public class ElevatorSolution {
 
     public static void main(String[] args) {
 
-        solution(peopleWeight, floor, capacity, maxWeight);
+        System.out.println(solution(peopleWeight, floor, capacity, maxWeight));
 
     }
 
@@ -23,16 +23,15 @@ public class ElevatorSolution {
         int stops = 0;
         int i = 0;
 
-        while(i < peopleWeight.length){
+        while (i < peopleWeight.length) {
             int currentWeight = 0;
             int currentRiderPosition = 0;
 
-            while(i+currentRiderPosition < peopleWeight.length && currentRiderPosition < capacity){
+            while (i + currentRiderPosition < peopleWeight.length && currentRiderPosition < capacity) {
                 currentWeight = currentWeight + peopleWeight[currentRiderPosition + 1];
 
                 currentRiderPosition++;
             }
-
 
 
         }

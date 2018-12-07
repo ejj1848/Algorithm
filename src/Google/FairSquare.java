@@ -15,7 +15,7 @@ public class FairSquare {
 
     public static void main(String[] args) {
         int x = 1;
-        int y = 4;
+        int y = 2000;
         System.out.println("Count: " + getFairSquares(x, y));
     }
 

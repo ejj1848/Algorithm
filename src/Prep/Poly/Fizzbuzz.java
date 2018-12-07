@@ -12,7 +12,7 @@ public class Fizzbuzz {
 
         System.out.println(fizzBuzzInJava8(1));
 
-        IntStream.rangeClosed(1, 21).mapToObj(
+        IntStream.rangeClosed(1, 1000).mapToObj(
 
                 i -> i % 3 == 0 ?
                         (i % 5 == 0 ? "Fizzbuzz" : "Fizz") :
