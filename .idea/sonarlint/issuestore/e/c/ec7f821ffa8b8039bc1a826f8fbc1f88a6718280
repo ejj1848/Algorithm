@@ -1,0 +1,11 @@
+
+8squid:S1643N"Use a StringBuilder instead.(À›Ø’ýÿÿÿÿ
+N
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÜóÂ!
+2squid:S1643/"Use a StringBuilder instead.(ØÄõS
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(³ñþ£üÿÿÿÿ
+8squid:S1643"Use a StringBuilder instead.(•ÿÅÿÿÿÿÿ
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(é¬«å
+>squid:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
+8squid:S1643?"Use a StringBuilder instead.(ø­«­ùÿÿÿÿ

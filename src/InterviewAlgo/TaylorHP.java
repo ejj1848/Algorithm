@@ -18,7 +18,7 @@ public class TaylorHP {
         Set<String> emailSet = new HashSet<String>();
         StringBuilder finalString = new StringBuilder();
 
-        String names[] =  S.split(",");
+        String[] names =  S.split(",");
         for(String name : names) {
 
             String email = makeEmail(name, C).toLowerCase();
@@ -42,13 +42,13 @@ public class TaylorHP {
 
     public String extractFirstName(String name) {
         name = name.trim();
-        String words[] = name.split(" ");
+        String[] words = name.split(" ");
         return words[0];
     }
 
     public String extractLastName(String name) {
         name = name.trim();
-        String words[] = name.split(" ");
+        String[] words = name.split(" ");
         return words[words.length-1];
     }
 

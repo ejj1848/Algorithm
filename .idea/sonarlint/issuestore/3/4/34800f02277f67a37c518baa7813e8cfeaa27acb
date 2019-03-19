@@ -1,0 +1,25 @@
+
+^squid:UnusedPrivateMethod"-Remove this unused private "fizzBuzz" method.(¡ãôùÿÿÿÿ8êÍÒ‚Û,
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ºü¹‰
+Ksquid:S1172F"4Remove this unused method parameter "numberOfHands".(¨®Š£
+[squid:UnusedPrivateMethodF"6Remove this unused private "generatePokerHand" method.(¨®Š£
+Nsquid:S1135O"2Complete the task associated to this TODO comment.(’§Š²şÿÿÿÿ
+jsquid:ModifiersOrderCheck	"EReorder the modifiers to comply with the Java Language Specification.(Æ¯æ¾
+usquid:S2293G"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÍòµıÿÿÿÿ
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ş³Ùº8êÍÒ‚Û,
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÚÊ‰»ùÿÿÿÿ
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(üş“ 
+Nsquid:S1135"2Complete the task associated to this TODO comment.(‹ø”öşÿÿÿÿ
+jsquid:ModifiersOrderCheck
+"EReorder the modifiers to comply with the Java Language Specification.(Ú®ş
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(êô‚Ÿûÿÿÿÿ
+Isquid:S11359"2Complete the task associated to this TODO comment.(×™ä°
+V
+squid:S106#"9Replace this use of System.out or System.err by a logger.(÷ â†8Ê‰Ğƒì,
+V
+squid:S106%"9Replace this use of System.out or System.err by a logger.(ûş®8Ê‰Ğƒì,
+V
+squid:S106'"9Replace this use of System.out or System.err by a logger.(ñˆ×8Ê‰Ğƒì,
+[
+squid:S106)"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ8Ê‰Ğƒì,

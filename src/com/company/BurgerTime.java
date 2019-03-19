@@ -21,9 +21,13 @@ package com.company;
 
 
 public class BurgerTime {
+
+
+
     public static void main(String[] args) {
        int[]arrival = {3,3,9};
        int[]service = {2,15,14};
+
 
         System.out.println(maxWait(arrival, service));
     }

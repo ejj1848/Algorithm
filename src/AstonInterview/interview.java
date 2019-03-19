@@ -13,8 +13,7 @@ public class interview {
 
 
     public static void main(String[] args) {
-//
-//            fizzBuzz();
+//        fizzBuzz();
         System.out.println(generateDeck().toString());
 //        System.out.println(generatePokerHand(2).toString());
 
@@ -23,14 +22,11 @@ public class interview {
     private static void fizzBuzz() {
         // todo:
 
-
         //   ITERATE FROM 1 TO 100
         //    IF DIV BY 3 PRINT FIZZ
         //    IF DIV BY 5 PRINT BUZZ
         //    IF DIV BY 3 & 5 PRINT FIZZBUZZ
         //    ELSE PRINT THE NUmber
-
-
 
     }
 
@@ -40,17 +36,22 @@ public class interview {
 
         // generate a deck of cards in around 6 lines of code
         String[] suits = "Hearts,Diamonds,Clubs,Spades".split(",");
+
         String[] vals = "Ace,2,3,4,5,6,7,8,9,10,Jack,Queen,King".split(",");
 
         List<String> deck = new ArrayList<>();
 
-        //todo: LOGIC TO CREATE THE LIST OF CARD VALUES
+        //todo: LOGIC TO CREATE THE LIST OF CARD VALUES\
 
-
-
+        for(String s: suits){
+            for(String v: vals){
+                deck.add( s + v);
+            }
+        }
 
 
         return deck;
+
     }
 
 
@@ -64,7 +65,6 @@ public class interview {
         Collections.shuffle(deck);
 
         // todo: create X number of hands.
-
 
         return hands;
     }
