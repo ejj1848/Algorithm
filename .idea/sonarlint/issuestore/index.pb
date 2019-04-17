@@ -35,3 +35,7 @@ Q
 !src/com/company/isPalindrome.java,6\a\6ad497e915bd29011e20a018be9359b7be3ec810
 N
 src/com/company/Workspace.java,5\f\5fbbb73060c77c2d0d5925544c23cd0b2ad1fd29
+Q
+!src/com/company/reverseArray.java,a\4\a4035afed301c9e4fe9a13996154d8433007e814
+N
+src/com/company/copyFiles.java,b\e\bed81a6cc08a0c5cc1d7577eb33b43a8a3fd4a0d
